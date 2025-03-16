@@ -1,0 +1,239 @@
+.titillium-web-extralight {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.titillium-web-light {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-bold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-black {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.titillium-web-extralight-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titillium-web-light-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.titillium-web-regular-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titillium-web-semibold-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titillium-web-bold-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: rgb(255, 255, 255);
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 6px 5px;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 60px;
+  margin-top: -120px;
+  font-weight: 700;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font-weight: 200;
+  margin-top: 60px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.knowmore {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-size: large;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Shimmer effect */
+.knowmore::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  transition: transform 0.95s ease-in-out;
+}
+
+.knowmore:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transform: scale(1);
+  border: solid 1px white;
+}
+
+/* Activate shimmer on hover */
+.knowmore:hover::before {
+  left: 100%;
+  transition: left 0.75s ease-in-out;
+}
+
+.background {
+  margin: 20px;
+  margin-top: 80px;
+  padding: 150px;
+  background-color: #000000; /* Dark mode feel */
+  background-image: url("images/scibble1.png"), url("images/scibble2.png"),
+    url("images/scibble3.png"), url("images/scibble4.png"),
+    url("images/scibble5.png"), url("images/scibble6.png"),
+    url("images/scibble7.png"), url("images/scibble8.png"),
+    url("images/scibble9.png"), url("images/scibble10.png"),
+    url("images/scibble11.png"), url("images/scibble12.png"),
+    url("images/scibble13.png"), url("images/scibble14.png"),
+    url("images/scibble15.png"), url("images/scibble18.png"),
+    url("images/scibble19.png"), url("images/scibble20.png"),
+    url("images/scibble21.png"), url("images/scibble22.png"),
+    url("images/scibble23.png"), url("images/scibble24.png"),
+    url("images/scibble26.png"), url("images/scibble27.png"),
+    url("images/scibble28.png"), url("images/scibble29.png");
+
+  background-position: 5% 5%, 90% 8%, 10% 12%, 85% 16%, 7% 20%, 92% 24%, 12% 28%,
+    88% 32%, 6% 36%, 94% 40%, 15% 44%, 85% 48%, 8% 52%, 91% 56%, 11% 60%,
+    93% 72%, 14% 76%, 86% 80%, 4% 84%, 95% 88%, 13% 92%, 89% 96%, 90% 55%,
+    10% 60%, 85% 65%, 7% 70%;
+
+  background-repeat: no-repeat;
+  background-size: 50px, 50px, 50px, 50px, 50px, 50px, 50px, 50px, 50px, 50px,
+    50px, 50px, 50px, 50px, 50px, 50px, 50px, 50px, 50px, 50px, 50px, 50px, 50px,
+    50px, 50px, 50px, 50px, 50px, 50px, 50px;
+}
+
+.bismillah {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  position: relative;
+  bottom: 140px;
+}
+.profile-pic {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px auto;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 10px 2px rgba(165, 158, 158, 0.8);
+
+  /* Start pixelated & slightly blurred */
+  image-rendering: pixelated;
+  filter: blur(3px) brightness(0.9);
+
+  /* Smooth transitions */
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out,
+    filter 0.5s ease-in-out;
+}
+
+/* On Hover: Reveal clarity, soft glow, and zoom */
+.profile-container:hover .profile-pic {
+  transform: scale(1.2); /* Smooth zoom */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.842); /* Glowing effect */
+  filter: blur(0) brightness(0.9); /* Remove pixelation */
+}
+.nav-item {
+  font-weight: 700;
+  padding: 10px 60px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Cool Hover Effect */
+.nav-item:hover {
+  background: rgba(192, 191, 191, 0.363); /* Subtle aqua tint */
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Underline effect */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 0;
+  height: 3px;
+  background: rgb(0, 0, 0);
+  transition: width 0.5s ease-in-out, left 0.2s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.nav-item:hover::after {
+  width: 80%;
+}
